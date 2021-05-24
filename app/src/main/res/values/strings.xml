@@ -1,0 +1,338 @@
+<resources>
+    <string name="app_name">Itext7</string>
+    <string name="Save">Guardar</string>
+    <string name="Name">Nombre</string>
+    <string name="Phone">Telefono</string>
+    <string name="email">email</string>
+    <string name="Orden">Orden D Trabajo</string>
+    <string name="Plates">Placas</string>
+    <string name="ColorCar">Color</string>
+    <string name="Kilometraje">Kilometraje</string>
+    <string name="Motor">Motor</string>
+    <string name="VIN">VIN</string>
+    <string name="TypeCar">TIPO</string>
+    <string name="Marca">MARCA</string>
+    <string name="Submarca">SUBMARCA</string>
+    <string name="Modelo">MODELO</string>
+    <string name="Engine">MOTOR</string>
+    <string name="Cilindrada">CILINDRADA</string>
+    <string name="Transmision">TRANSMISION</string>
+    <string name="Traccion">TRACCION</string>
+    <string name="Direccion">DIRECCION</string>
+    <string name="TrenValvulas">TREN DE VALVULAS</string>
+    <string name="Distribucion">DISTRIBUCION</string>
+    <string name="NoValv"># de VALVULAS</string>
+    <string name="Comunicacion">COMUNICACION</string>
+    <string name="SintomDescription">Descripcion del Sintoma</string>
+    <string name="VerificaProblema">Verificacion del Problema</string>
+
+    <string name="Str_causas_del_sintoma">CAUSAS DEL SINTOMA</string>
+    <string name="Str_cuando_ocurrio_el_sintoma_por_primera_vez">¿Cuándo ocurrio el sintoma por primera vez?</string>
+    <string name="Str_se_ha_realizado_alg_n_tipo_de_servicio_en_meses_pasados">¿Se ha realizado algún tipo de servicio en meses pasados?</string>
+    <string name="Str_qu_tipo_de_servicio_se_le_ha_practicado">¿Qué tipo de servicio se le ha practicado?</string>
+    <string name="Str_problemas_al_intentar_arrancar_o_encender_el_vehiculo">¿Problemas al intentar arrancar o encender el vehiculo?</string>
+    <string name="Str_el_motor_se_detiene">El motor se detiene</string>
+    <string name="Str_condiciones_de_ralent">Condiciones de ralentí</string>
+    <string name="Str_condiciones_de_funcionamiento">Condiciones de funcionamiento</string>
+    <string name="Str_problemas_con_la_transmisi_n">Problemas con la transmisión</string>
+    <string name="Str_cu_ndo_generalmente_ocurre_el_s_ntoma_de_falla">¿Cuándo generalmente ocurre el síntoma de falla?</string>
+    <string name="Str_cu_l_es_la_temperatura_del_motor_al_presentarse_el_s_ntoma">¿Cuál es la temperatura del motor al presentarse el síntoma?</string>
+    <string name="Str_condiciones_de_manejo_durante_la_ocurrencia_del_s_ntoma">Condiciones de manejo durante la ocurrencia del síntoma</string>
+    <string name="Str_haitos_de_manejo">Haitos de manejo</string>
+    <string name="Str_qu_tipo_de_combustible_suele_usar_en_su_veh_culo">¿Qué tipo de combustible suele usar en su vehículo?</string>
+    <string name="StR_se_percibe_alg_n_tipo_de_olor">¿Se percibe algún tipo de olor?</string>
+    <string name="Str_se_percibe_alg_n_tipo_de_ruido">¿Se percibe algún tipo de ruido?</string>
+    <string name="Str_despu_s_de_cuantos_kil_metros_se_presenta_el_s_ntoma">¿Después de cuantos kilómetros se presenta el síntoma?</string>
+    <string name="cu_ntos_kil_metros_por_d_a_se_conduce_el_veh_culo">¿Cuántos kilómetros por día se conduce el vehículo?</string>
+    <string name="Str_la_luz_indicadora_de_mal_funcionamiento_esta_encendida">¿La luz indicadora de mal funcionamiento esta encendida?</string>
+    <string name="Str_sistemas_involucrados_para_el_diagnostico">SISTEMAS INVOLUCRADOS PARA EL DIAGNOSTICO</string>
+    <string name="Str_sistema_mec_nico"> 1.-  SISTEMA MECÁNICO</string>
+    <string name="Str_sistema_de_lubricaci_n"> 2.-  SISTEMA DE LUBRICACIÓN</string>
+    <string name="Str_sistema_de_inyecci_n"> 3.-   SISTEMA DE INYECCIÓN</string>
+    <string name="Str_sistema_de_ignici_n"> 4.-  SISTEMA DE IGNICIÓN</string><string name="Str_sistema_de_transmisi_n">14.- SISTEMA DE TRANSMISIÓN</string>
+    <string name="Str_sistema_de_admisi_n"> 5.-  SISTEMA DE ADMISIÓN</string>
+    <string name="Str_sistema_de_escape"> 6.-  SISTEMA DE ESCAPE</string>
+    <string name="Str_sistema_de_enfriamiento_y_aire_acondicionado">7.-  SISTEMA DE ENFRIAMIENTO Y AC</string>
+    <string name="Str_sistema_electronico"> 8.-  SISTEMA ELECTRONICO</string>
+    <string name="Str_sistema_electrico"> 9.-  SISTEMA ELECTRICO</string>
+    <string name="Str_sistema_de_frenos"> 10.- SISTEMA DE FRENOS</string>
+    <string name="Str_sistema_de_suspenci_n"> 11.- SISTEMA DE SUSPENCIÓN</string>
+    <string name="Str_sistema_de_direcci_n"> 12.- SISTEMA DE DIRECCIÓN</string>
+    <string name="sistema_de_distribuci_n">  13.- SISTEMA DE DISTRIBUCIÓN</string>
+    <string name="Str_pruebas_basicas">PRUEBAS BASICAS</string>
+    <string name="Str_voltaje_de_bateria_sin_arrancar">Voltaje de bateria sin arrancar</string>
+    <string name="Str_status">Status</string>
+    <string name="Str_voltaje">Voltaje</string>
+    <string name="Str_voltaje_de_bateria_al_dar_arranque">Voltaje de bateria al dar arranque</string>
+
+    <string-array name="arr_carType">
+<!--        <item>  </item>-->
+        <item> SEDAN </item>
+        <item> HATCHBACK</item>
+        <item> FAMILIAR </item>
+        <item> COUPÉ </item>
+        <item> CABRIOLET </item>
+        <item> CROSSOVER </item>
+        <item> MONOVOLUMEN </item>
+        <item> PICK-UP</item>
+        <item> UTILITARIO </item>
+        <item> DEPORTIVO</item>
+    </string-array>
+
+    <string-array name="arr_marca">
+<!--        <item></item>-->
+        <item> FORD </item>
+        <item> NISSAN </item>
+        <item> CHEVROLET </item>
+        <item> DODGE </item>
+        <item> GMC </item>
+        <item> RENAULT </item>
+        <item> HONDA </item>
+        <item> TOYOTA </item>
+        <item> PEUGEOT </item>
+        <item> VOLKSWAGEN </item>
+        <item> FIAT </item>
+        <item> SEAT </item>
+        <item> AUDI </item>
+        <item> ALFA ROMEO </item>
+    </string-array>
+
+    <string-array name="arr_cilindrada">
+<!--        <item></item>-->
+        <item>1.0</item> <item>1.1</item> <item>1.2</item> <item>1.3</item> <item>1.4</item> <item>1.5</item>
+        <item>1.6</item> <item>1.7</item> <item>1.8</item> <item>1.9</item> <item>2.0</item>
+        <item>2.1</item> <item>2.2</item> <item>2.3</item> <item>2.4</item> <item>2.5</item>
+        <item>2.6</item> <item>2.7</item> <item>2.8</item> <item>2.9</item> <item>3.0</item>
+        <item>3.1</item> <item>3.2</item> <item>3.3</item> <item>3.4</item> <item>3.5</item>
+        <item>3.6</item> <item>3.7</item> <item>3.8</item> <item>3.9</item> <item>4.0</item>
+        <item>4.1</item> <item>4.2</item> <item>4.3</item> <item>4.4</item> <item>4.5</item>
+        <item>4.6</item> <item>4.7</item> <item>4.8</item> <item>4.9</item> <item>5.0</item>
+        <item>5.1</item> <item>5.2</item> <item>5.3</item> <item>5.4</item> <item>5.5</item>
+        <item>5.6</item> <item>5.7</item> <item>5.8</item> <item>5.9</item> <item>6.0</item>
+    </string-array>>
+
+    <string-array name="arr_transmision">
+<!--        <item></item>-->
+        <item> MANUAL </item> <item> AUTOMATICA </item> <item> TRIPTRONIC </item>
+    </string-array>
+
+    <string-array name="arr_direccion">
+<!--        <item></item>-->
+        <item>MECÁNICA </item> <item>HIDRÁULICA</item> <item>ELECTROHIDRÁULICA</item>
+        <item>ELECTRÓNICA</item>
+    </string-array>
+
+    <string-array name="arr_traccion">
+<!--        <item></item>-->
+        <item> DELANTERA </item> <item>TRACERA</item> <item> INTEGRAL </item>
+    </string-array>
+
+    <string-array name="arr_trenValvulas">
+<!--        <item></item>-->
+        <item>OHV</item> <item>SOHC</item> <item>DOHC</item>
+    </string-array>
+
+    <string-array name="arr_distribucion">
+<!--        <item></item>-->
+        <item>INDIRECTA</item> <item>XXX</item> <item>XXX</item> <item>XXX</item>
+    </string-array>
+
+    <string-array name="arr_comunicacion">
+<!--        <item></item>-->
+        <item>OBD II RED CAN BUS</item> <item>XXX</item> <item>XXX</item> <item>XXX</item>
+    </string-array>
+
+    <string-array name="sintoma">
+<!--        <item></item>-->
+        <item> Menos de 1 semana </item>
+        <item> 1 semana </item>
+        <item> 2 semanas </item>
+        <item> 3 semanas </item>
+        <item> 1 mes </item>
+        <item> 1 mes y 1 semana </item>
+        <item> 1 mes y 2 semanas </item>
+        <item> 1 mes y 3 semanas </item>
+        <item> 2 meses o más </item>
+        <item> Desconoce </item>
+    </string-array>
+    
+    <string-array name="servMesPasado">
+<!--        <item></item>-->
+        <item> Si </item>
+        <item> No </item>
+    </string-array>
+
+    <string-array name="tipoServicio">
+<!--        <item></item>-->
+        <item> Diagnóstico </item>
+        <item> Mantenimiento </item>
+        <item> Reparación </item>
+        <item> Desconoce </item>
+        <item> Ninguno </item>
+    </string-array>
+
+    <string-array name="problemaEncender">
+<!--        <item></item>-->
+        <item> Enciende sin problema </item>
+        <item> Sin marcha </item>
+        <item> Marcha </item>
+        <item> Marcha, pero no prende </item>
+        <item> Prende, pero tarda </item>
+    </string-array>
+
+    <string-array name="motorDetiene">
+<!--        <item></item>-->
+        <item> Después de encender </item>
+        <item> En marcha </item>
+        <item> En conducción </item>
+        <item> En semáforos o topes </item>
+        <item> En ralentí </item>
+        <item> Acelerándolo </item>
+        <item> Al estacionarse </item>
+    </string-array>
+
+    <string-array name="ralenti">
+<!--        <item></item>-->
+        <item> Demasiado lento </item>
+        <item> Demasiado rápido </item>
+        <item> Intermitente </item>
+        <item> Áspero o desigual </item>
+        <item> Fluctuante </item>
+        <item> Otros </item>
+    </string-array>
+
+    <string-array name="condFuncionamiento">
+<!--        <item></item>-->
+        <item> Áspero </item>
+        <item> Pierde potencia </item>
+        <item> Jaloneos o tironeos </item>
+        <item> Consumo de combustible </item>
+        <item> Vacila al acelerar </item>
+        <item> Fallas de encendido </item>
+        <item> Golpes o ruidos de motor </item>
+        <item> Calentamiento </item>
+        <item> Otros </item>
+    </string-array>
+
+    <string-array name="probTransmicion">
+<!--        <item></item>-->
+        <item> Ninguno </item>
+        <item> Cambios incorrectos 1 </item>
+        <item> Cambios incorrectos 2 </item>
+        <item> Sin cambios/avance </item>
+        <item> Jaloneos o tironeos </item>
+        <item> Otros </item>
+    </string-array>
+
+    <string-array name="ocurreFalla">
+<!--        <item></item>-->
+        <item> Mañana </item>
+        <item> Tarde </item>
+        <item> Noche </item>
+        <item> En cualquier momento </item>
+    </string-array>
+
+    <string-array name="tempMotor">
+<!--        <item></item>-->
+        <item> Frio </item>
+        <item> Al calentarse </item>
+        <item> Caliente </item>
+    </string-array>
+
+    <string-array name="condicionManejoFalla">
+<!--        <item></item>-->
+        <item> Al realizar cambios </item>
+        <item> Con A/C operando </item>
+        <item> Con los faros encendidos </item>
+        <item> Al acelerar </item>
+        <item> Al desacelerar </item>
+        <item> En bajadas </item>
+        <item> En subidas </item>
+        <item> Nivelado </item>
+        <item> En curvas </item>
+        <item> Superficies irregulares </item>
+        <item> Otros </item>
+    </string-array>
+
+    <string-array name="habitosManejo">
+<!--        <item></item>-->
+        <item> En ciudad </item>
+        <item> En autopista </item>
+        <item> En suburbios</item>
+        <item> En terracería</item>
+    </string-array>
+
+    <string-array name="combustible">
+<!--        <item></item>-->
+        <item> Magna </item>
+        <item> Premium </item>
+        <item> Etanol </item>
+        <item> Diesel </item>
+        <item> Biodiesel </item>
+        <item> E85 </item>
+        <item> Metanol </item>
+        <item> Propano </item>
+        <item> Otros </item>
+    </string-array>
+
+    <string-array name="olor">
+<!--        <item></item>-->
+        <item> Aceite quemado </item>
+        <item> Caliente </item>
+        <item> Combustible </item>
+        <item> ables quemados </item>
+        <item> Dulce </item>
+        <item> Ninguno </item>
+        <item> Otros </item>
+    </string-array>
+
+    <string-array name="ruido">
+<!--        <item></item>-->
+        <item> Ninguno </item>
+        <item> Cliqueo </item>
+        <item> Chasquido </item>
+        <item> Golpeteo </item>
+        <item> Traqueteo </item>
+        <item> Estruendos </item>
+        <item> Quejido </item>
+        <item> Vibración </item>
+        <item> Siseo </item>
+        <item> Chillido </item>
+        <item> Trancazo </item>
+        <item> Otros </item>
+    </string-array>
+
+    <string-array name="kmSintoma">
+<!--        <item></item>-->
+        <item> 1 a 5 km </item>
+        <item> 5 a 15 km </item>
+        <item> 15 a 25 km </item>
+        <item> Mayor0 a 25 km </item>
+    </string-array>
+
+    <string-array name="kmDia">
+<!--        <item></item>-->
+        <item> 1 a 5 km </item>
+        <item> 5 a 10 km </item>
+        <item> 10 a 15 km </item>
+        <item> 15 a 20 km </item>
+        <item> 20 a 25 km </item>
+        <item> 25 a 30 km </item>
+        <item> 30 a 35 km </item>
+        <item> 40 a 45 km </item>
+        <item> Mas de 50 km </item>
+    </string-array>
+
+    <string-array name="indicadorMalFuncionamiento">
+<!--        <item></item>-->
+        <item> Si, siempre </item>
+        <item> Si, algunas veces </item>
+        <item> Si, parpadea </item>
+        <item> No </item>
+        <item> No, nunca prende </item>
+    </string-array>
+
+
+
+
+</resources>

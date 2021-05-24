@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EdT_Orden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/Orden"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/EdT_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/Name"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:id="@+id/EdT_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/Phone"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/EdT_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/EdT_Plates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/Plates"
+                android:inputType="textVisiblePassword" />
+
+            <EditText
+                android:id="@+id/EdT_ColorCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/ColorCar"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:id="@+id/EdT_VIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/VIN"
+                android:inputType="textVisiblePassword" />
+
+            <EditText
+                android:id="@+id/EdT_Kilometraje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/Kilometraje"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/EdT_Engine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/Engine"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/Cilindrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Cilindrada"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_Cilindrada"
+                android:entries="@array/arr_cilindrada"
+                android:prompt="@layout/spinner_item_mecas"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/Tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TypeCar"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_TypeCar"
+                android:entries="@array/arr_carType"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Marca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Marca"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_MarcaCar"
+                android:entries="@array/arr_marca"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edT_Submarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/Submarca"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/EdT_Modelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/Modelo"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/Transmision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Transmision"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_Transmision"
+                android:entries="@array/arr_transmision"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Traccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Traccion"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_Traccion"
+                android:entries="@array/arr_traccion"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Direccion"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_Direccion"
+                android:entries="@array/arr_direccion"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/trenValv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TrenValvulas"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_trenValv"
+                android:entries="@array/arr_trenValvulas"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/Distribucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Distribucion"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_Distribucion"
+                android:entries="@array/arr_distribucion"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EdT_NoValv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/NoValv"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/Comunicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Comunicacion"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_Comunicacion"
+                android:entries="@array/arr_comunicacion"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edTM_Sintoma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/SintomDescription"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/edTM_VerProblema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/VerificaProblema"
+                android:inputType="textMultiLine" />
+
+
+            <TextView
+                android:id="@+id/tv_CausasSintoma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Str_causas_del_sintoma"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/Str_cuando_ocurrio_el_sintoma_por_primera_vez"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+            <Spinner
+                android:id="@+id/spin_Sintoma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/sintoma" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_se_ha_realizado_alg_n_tipo_de_servicio_en_meses_pasados"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_servMesPasado"
+                android:entries="@array/servMesPasado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_qu_tipo_de_servicio_se_le_ha_practicado"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_tipoServicio"
+                android:entries="@array/tipoServicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_problemas_al_intentar_arrancar_o_encender_el_vehiculo"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_problemaEncender"
+                android:entries="@array/problemaEncender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_el_motor_se_detiene"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_motorDetiene"
+                android:entries="@array/motorDetiene"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_condiciones_de_ralent"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_ralenti"
+                android:entries="@array/ralenti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_condiciones_de_funcionamiento"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_condFuncionamiento"
+                android:entries="@array/condFuncionamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_problemas_con_la_transmisi_n"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_probTransmicion"
+                android:entries="@array/probTransmicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_cu_ndo_generalmente_ocurre_el_s_ntoma_de_falla"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_ocurreFalla"
+                android:entries="@array/ocurreFalla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_cu_l_es_la_temperatura_del_motor_al_presentarse_el_s_ntoma"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_tempMotor"
+                android:entries="@array/tempMotor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_condiciones_de_manejo_durante_la_ocurrencia_del_s_ntoma"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_condicionManejoFalla"
+                android:entries="@array/condicionManejoFalla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/Str_qu_tipo_de_combustible_suele_usar_en_su_veh_culo"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+            <Spinner
+                android:id="@+id/spin_combustible"
+                android:entries="@array/combustible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_haitos_de_manejo"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_habitosManejo"
+                android:entries="@array/habitosManejo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/StR_se_percibe_alg_n_tipo_de_olor"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_olor"
+                android:entries="@array/olor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_se_percibe_alg_n_tipo_de_ruido"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_Ruido"
+                android:entries="@array/ruido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_despu_s_de_cuantos_kil_metros_se_presenta_el_s_ntoma"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_kmSintoma"
+                android:entries="@array/kmSintoma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cu_ntos_kil_metros_por_d_a_se_conduce_el_veh_culo"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_kmDia"
+                android:entries="@array/kmDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_la_luz_indicadora_de_mal_funcionamiento_esta_encendida"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="#0A20DD"/>
+            <Spinner
+                android:id="@+id/spin_indicadorMalFuncionamiento"
+                android:entries="@array/indicadorMalFuncionamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_SISTEMAS_INVOLUCRADOS_PARA_EL_DIAGNOSTICO"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Str_sistemas_involucrados_para_el_diagnostico"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <Switch
+                android:id="@+id/sw_SisMecanico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill"
+                android:text="@string/Str_sistema_mec_nico"
+                android:textColor="#111E67"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisLubricacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_de_lubricaci_n"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisIgnicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_de_ignici_n"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisInyeccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_de_inyecci_n"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisAdmicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_de_admisi_n"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisEscape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_de_escape"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_de_enfriamiento_y_aire_acondicionado"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisElectronico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_electronico"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisElectrico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_electrico"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisFrenos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_de_frenos"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisSuspencion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_de_suspenci_n"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_de_direcci_n"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisDistribucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sistema_de_distribuci_n"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <Switch
+                android:id="@+id/sw_SisTransmicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Str_sistema_de_transmisi_n"
+                android:textColor="#111E67"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_PRUEBAS_BASICAS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Str_pruebas_basicas"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/tv_Volt_Bat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/Str_voltaje_de_bateria_sin_arrancar"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_Voltaje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_Voltaje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Volt_Arranque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/Str_voltaje_de_bateria_al_dar_arranque"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_VoltArranque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_VoltArranque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_Volt_Motor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Voltaje de batería al encender el motor"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_VoltMotor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_VoltMotor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Volt_1500rpm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Voltaje de batería al revolucionar motor a 1500 rpm"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_Volt1500rpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_Volt1500rpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Volt_3000rpm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Voltaje de batería al revolucionar motor a 3000 rpm"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_Volt3000rpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_Volt3000rpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_AmpAlternador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Amperaje de arranque para alternador"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_AmpAlternador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_AmpAlternador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ampers"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_AMpCargaAlternador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Amperaje de carga en el alternador"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_AmpCargaAlternador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_AmpCargaAlternador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ampers"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Aceite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Estado del aceite de motor"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_Aceite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_Aceite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_NivelAceite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Nivel de aceite de motor"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_NivelAceite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_NivelAceite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_NivelAnticongelante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Nivel del anticongelante"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_NivelAnticongelante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_NivelAnticongelante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_AceiteTransmicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Estado del aceite de la transmisión"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_AceiteTransmision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_AceiteTransmision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_NivelAceiteTransmision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Nivel de aceite de la transmisión"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_NivelAceiteTransmision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_NivelAceiteTransmision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_PresionCombustible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Presión de combustible"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_PresionCombustible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_PresionCombustible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="psi"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_PresionVacioAdmision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Presión de vacio en colector de admisión"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_PresionVacioAdmision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_PresionVacioAdmision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="in/Hg"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_PresionCilindros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Presión de compresión en cilindros"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_PresionCilindros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_PresionCilindros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="psi"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Bujias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Estado y calibración de bujías"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_Bujias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_Bujias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="mm"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_ResistenciaBobinas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Resistencia primaria y secundaria en bobinas de encendido"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_ResistenciaBobinas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_ResistenciaBobinas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="kOhms"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_SenhalCMP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Señales de cmp"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_VSenhalCMP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_SenhalCMP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_SenhalCKP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Señales de ckp"
+                android:textAlignment="center"
+                android:textColor="#0A20DD"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_SenhalCKP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Str_status" />
+
+                <EditText
+                    android:id="@+id/edT_SenhalCKP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/Str_voltaje"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/btn_ACEPT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/Save" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
