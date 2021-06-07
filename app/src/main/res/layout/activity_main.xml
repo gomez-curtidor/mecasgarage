@@ -16,6 +16,15 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/EdT_NomArchivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/NombreArchivo"
+                android:inputType="textShortMessage" />
+
+            <EditText
                 android:id="@+id/EdT_Orden"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,13 +115,14 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:textColor="#0A20DD"/>
+
             <Spinner
                 android:id="@+id/spin_Cilindrada"
-                android:entries="@array/arr_cilindrada"
-                android:prompt="@layout/spinner_item_mecas"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_height="wrap_content" />
+                android:entries="@array/arr_cilindrada"
+                android:prompt="@layout/spinner_item_mecas" />
 
 
             <TextView
@@ -130,7 +140,8 @@
                 android:entries="@array/arr_carType"
                 android:layout_width="match_parent"
                 android:layout_marginTop="10dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"/>
+            />
 
             <TextView
                 android:id="@+id/Marca"

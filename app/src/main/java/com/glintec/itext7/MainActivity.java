@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
 //----------------------------------------------
 
     private EditText edName, edOrden, edPhone, edMail, edPlates, edColorCar, edVIN, edKm, edEngine,
-            edSubmarca, edModelo, edNoValv,  edMSintoma, edMProblema, edAge, edLocation;
+            edSubmarca, edModelo, edNoValv,  edMSintoma, edMProblema, edAge, edLocation, edNomArch;
     private Spinner spTypeCar, spMarca, spCilindrada, spTransmision, spTraccion, spDireccion,
                     spTrenValv, spDistribucion, spComunicacion;
     private Button btnAcept;
@@ -221,6 +221,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        edNomArch=findViewById(R.id.EdT_NomArchivo); //Nombre del archivo
         edName=findViewById(R.id.EdT_Name);  //Nombre
         edOrden = findViewById(R.id.EdT_Orden);  //No de orden
         edPhone = findViewById(R.id.EdT_Phone); //Telefono
@@ -392,8 +393,19 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void createPlantilla()throws FileNotFoundException{
+        String nomFile = "FOR-"+edNomArch.getText().toString()+".pdf";
+        java.text.SimpleDateFormat fechaFormat = new SimpleDateFormat("dd / MM / yyyy");
+        String fecha = fechaFormat.format(new Date());
+
+//        Time fecha = new Time();
+//        fecha.setToNow();
+//        tabla3.addCell(new Cell().add(new Paragraph("Date")));
+//        tabla3.addCell(new Cell().add(new Paragraph(fecha1)));
+
         String rutaPDF = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString();
-        File archivo = new File(rutaPDF, "MECAS_3.pdf");
+        File archivo = new File(rutaPDF, nomFile);
+//        File archivo = new File(rutaPDF, "MECAS");
+
 
 //        File rutaPDF = Environment.getExternalStorageDirectory();
 //        File archivo = new File(rutaPDF.getPath(), "MECAS_3.pdf");
@@ -550,7 +562,7 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("FECHA INGRESO").setFontSize(9).setBold()
                 .setTextAlignment(TextAlignment.CENTER)).setBackgroundColor(new DeviceRgb(220,230,242)));
-        tabla3.addCell(new Cell(1,2).add(new Paragraph("XX/XX/XXXX")
+        tabla3.addCell(new Cell(1,2).add(new Paragraph(fecha)
                 .setFontSize(10).setTextAlignment(TextAlignment.CENTER)));
 //        tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell(1,2).add(new Paragraph("FECHA SALIDA").setBold()

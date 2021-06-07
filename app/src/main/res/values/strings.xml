@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Itext7</string>
+    <string name="NombreArchivo">Nombre Archivo</string>
     <string name="Save">Guardar</string>
     <string name="Name">Nombre</string>
     <string name="Phone">Telefono</string>
@@ -67,6 +68,7 @@
 
     <string-array name="arr_carType">
 <!--        <item>  </item>-->
+        <item> null </item>
         <item> SEDAN </item>
         <item> HATCHBACK</item>
         <item> FAMILIAR </item>
@@ -81,6 +83,7 @@
 
     <string-array name="arr_marca">
 <!--        <item></item>-->
+        <item> null </item>
         <item> FORD </item>
         <item> NISSAN </item>
         <item> CHEVROLET </item>
@@ -99,6 +102,7 @@
 
     <string-array name="arr_cilindrada">
 <!--        <item></item>-->
+        <item> null </item>
         <item>1.0</item> <item>1.1</item> <item>1.2</item> <item>1.3</item> <item>1.4</item> <item>1.5</item>
         <item>1.6</item> <item>1.7</item> <item>1.8</item> <item>1.9</item> <item>2.0</item>
         <item>2.1</item> <item>2.2</item> <item>2.3</item> <item>2.4</item> <item>2.5</item>
@@ -113,37 +117,44 @@
 
     <string-array name="arr_transmision">
 <!--        <item></item>-->
+        <item> null </item>
         <item> MANUAL </item> <item> AUTOMATICA </item> <item> TRIPTRONIC </item>
     </string-array>
 
     <string-array name="arr_direccion">
 <!--        <item></item>-->
+        <item> null </item>
         <item>MECÁNICA </item> <item>HIDRÁULICA</item> <item>ELECTROHIDRÁULICA</item>
         <item>ELECTRÓNICA</item>
     </string-array>
 
     <string-array name="arr_traccion">
 <!--        <item></item>-->
+        <item> null </item>
         <item> DELANTERA </item> <item>TRACERA</item> <item> INTEGRAL </item>
     </string-array>
 
     <string-array name="arr_trenValvulas">
 <!--        <item></item>-->
+        <item> null </item>
         <item>OHV</item> <item>SOHC</item> <item>DOHC</item>
     </string-array>
 
     <string-array name="arr_distribucion">
 <!--        <item></item>-->
+        <item> null </item>
         <item>INDIRECTA</item> <item>XXX</item> <item>XXX</item> <item>XXX</item>
     </string-array>
 
     <string-array name="arr_comunicacion">
 <!--        <item></item>-->
+        <item> null </item>
         <item>OBD II RED CAN BUS</item> <item>XXX</item> <item>XXX</item> <item>XXX</item>
     </string-array>
 
     <string-array name="sintoma">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Menos de 1 semana </item>
         <item> 1 semana </item>
         <item> 2 semanas </item>
@@ -158,12 +169,14 @@
     
     <string-array name="servMesPasado">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Si </item>
         <item> No </item>
     </string-array>
 
     <string-array name="tipoServicio">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Diagnóstico </item>
         <item> Mantenimiento </item>
         <item> Reparación </item>
@@ -173,6 +186,7 @@
 
     <string-array name="problemaEncender">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Enciende sin problema </item>
         <item> Sin marcha </item>
         <item> Marcha </item>
@@ -182,6 +196,7 @@
 
     <string-array name="motorDetiene">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Después de encender </item>
         <item> En marcha </item>
         <item> En conducción </item>
@@ -193,6 +208,7 @@
 
     <string-array name="ralenti">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Demasiado lento </item>
         <item> Demasiado rápido </item>
         <item> Intermitente </item>
@@ -203,6 +219,7 @@
 
     <string-array name="condFuncionamiento">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Áspero </item>
         <item> Pierde potencia </item>
         <item> Jaloneos o tironeos </item>
@@ -216,6 +233,7 @@
 
     <string-array name="probTransmicion">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Ninguno </item>
         <item> Cambios incorrectos 1 </item>
         <item> Cambios incorrectos 2 </item>
@@ -226,6 +244,7 @@
 
     <string-array name="ocurreFalla">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Mañana </item>
         <item> Tarde </item>
         <item> Noche </item>
@@ -234,6 +253,7 @@
 
     <string-array name="tempMotor">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Frio </item>
         <item> Al calentarse </item>
         <item> Caliente </item>
@@ -241,6 +261,7 @@
 
     <string-array name="condicionManejoFalla">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Al realizar cambios </item>
         <item> Con A/C operando </item>
         <item> Con los faros encendidos </item>
@@ -256,6 +277,7 @@
 
     <string-array name="habitosManejo">
 <!--        <item></item>-->
+        <item> null </item>
         <item> En ciudad </item>
         <item> En autopista </item>
         <item> En suburbios</item>
@@ -264,6 +286,7 @@
 
     <string-array name="combustible">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Magna </item>
         <item> Premium </item>
         <item> Etanol </item>
@@ -277,6 +300,7 @@
 
     <string-array name="olor">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Aceite quemado </item>
         <item> Caliente </item>
         <item> Combustible </item>
@@ -288,6 +312,7 @@
 
     <string-array name="ruido">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Ninguno </item>
         <item> Cliqueo </item>
         <item> Chasquido </item>
@@ -304,6 +329,7 @@
 
     <string-array name="kmSintoma">
 <!--        <item></item>-->
+        <item> null </item>
         <item> 1 a 5 km </item>
         <item> 5 a 15 km </item>
         <item> 15 a 25 km </item>
@@ -312,6 +338,7 @@
 
     <string-array name="kmDia">
 <!--        <item></item>-->
+        <item> null </item>
         <item> 1 a 5 km </item>
         <item> 5 a 10 km </item>
         <item> 10 a 15 km </item>
@@ -325,6 +352,7 @@
 
     <string-array name="indicadorMalFuncionamiento">
 <!--        <item></item>-->
+        <item> null </item>
         <item> Si, siempre </item>
         <item> Si, algunas veces </item>
         <item> Si, parpadea </item>
