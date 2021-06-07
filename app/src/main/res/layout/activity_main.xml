@@ -22,7 +22,9 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/NombreArchivo"
-                android:inputType="textShortMessage" />
+                android:textAlignment="center"
+                android:inputType="textShortMessage"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/EdT_Orden"
@@ -31,7 +33,9 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/Orden"
-                android:inputType="textPersonName|numberDecimal" />
+                android:textAlignment="center"
+                android:inputType="textPersonName|numberDecimal"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/EdT_Name"
@@ -40,7 +44,9 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/Name"
-                android:inputType="textCapCharacters" />
+                android:textAlignment="center"
+                android:inputType="textCapCharacters"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/EdT_Phone"
@@ -49,7 +55,9 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/Phone"
-                android:inputType="phone" />
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/EdT_email"
@@ -58,7 +66,9 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/email"
-                android:inputType="textEmailAddress" />
+                android:textAlignment="center"
+                android:inputType="textEmailAddress"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/EdT_Plates"
@@ -67,16 +77,19 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/Plates"
-                android:inputType="textVisiblePassword" />
+                android:textAlignment="center"
+                android:inputType="textVisiblePassword"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/EdT_ColorCar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/ColorCar"
-                android:inputType="textCapCharacters" />
+                android:textAlignment="center"
+                android:inputType="textCapCharacters"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/EdT_VIN"
@@ -85,7 +98,9 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/VIN"
-                android:inputType="textVisiblePassword" />
+                android:textAlignment="center"
+                android:inputType="textVisiblePassword"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/EdT_Kilometraje"
@@ -94,7 +109,9 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/Kilometraje"
-                android:inputType="number" />
+                android:textAlignment="center"
+                android:inputType="number"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/EdT_Engine"
@@ -103,7 +120,9 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/Engine"
-                android:inputType="numberDecimal" />
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:gravity="center_horizontal" />
 
             <TextView
                 android:id="@+id/Cilindrada"
@@ -166,9 +185,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ems="10"
-                android:gravity="top"
                 android:hint="@string/Submarca"
-                android:inputType="textMultiLine" />
+                android:textAlignment="center"
+                android:inputType="textMultiLine"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/EdT_Modelo"
@@ -176,9 +196,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ems="10"
-                android:gravity="top"
                 android:hint="@string/Modelo"
-                android:inputType="textMultiLine" />
+                android:textAlignment="center"
+                android:inputType="textMultiLine"
+                android:gravity="center_horizontal" />
 
             <TextView
                 android:id="@+id/Transmision"
@@ -269,10 +290,11 @@
                 android:id="@+id/EdT_NoValv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="@string/NoValv"
-                android:inputType="numberDecimal" />
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:gravity="center_horizontal" />
 
             <TextView
                 android:id="@+id/Comunicacion"
@@ -297,9 +319,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ems="10"
-                android:gravity="top"
                 android:hint="@string/SintomDescription"
-                android:inputType="textMultiLine" />
+                android:textAlignment="center"
+                android:inputType="textMultiLine"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/edTM_VerProblema"
@@ -307,9 +330,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ems="10"
-                android:gravity="top"
                 android:hint="@string/VerificaProblema"
-                android:inputType="textMultiLine" />
+                android:textAlignment="center"
+                android:inputType="textMultiLine"
+                android:gravity="center_horizontal" />
 
 
             <TextView

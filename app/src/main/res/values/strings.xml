@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Itext7</string>
     <string name="NombreArchivo">Nombre Archivo</string>
-    <string name="Save">Guardar</string>
+    <string name="Save">Crear Archivo</string>
     <string name="Name">Nombre</string>
     <string name="Phone">Telefono</string>
     <string name="email">email</string>
