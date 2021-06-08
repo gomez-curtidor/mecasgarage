@@ -671,11 +671,12 @@
                 android:text="@string/Str_sistema_de_escape"
                 android:textColor="#111E67"
                 android:textSize="18sp" />
+
             <Switch
                 android:id="@+id/sw_SisAC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Str_sistema_de_enfriamiento_y_aire_acondicionado"
+                android:text="@string/Str_sistema_de_aire_acondicionado"
                 android:textColor="#111E67"
                 android:textSize="18sp" />
             <Switch

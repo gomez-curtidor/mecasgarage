@@ -53,7 +53,7 @@
     <string name="Str_sistema_de_ignici_n"> 4.-  SISTEMA DE IGNICIÓN</string><string name="Str_sistema_de_transmisi_n">14.- SISTEMA DE TRANSMISIÓN</string>
     <string name="Str_sistema_de_admisi_n"> 5.-  SISTEMA DE ADMISIÓN</string>
     <string name="Str_sistema_de_escape"> 6.-  SISTEMA DE ESCAPE</string>
-    <string name="Str_sistema_de_enfriamiento_y_aire_acondicionado">7.-  SISTEMA DE ENFRIAMIENTO Y AC</string>
+    <string name="Str_sistema_de_aire_acondicionado">7.-  SISTEMA DE AIRE ACONDICIONADO</string>
     <string name="Str_sistema_electronico"> 8.-  SISTEMA ELECTRONICO</string>
     <string name="Str_sistema_electrico"> 9.-  SISTEMA ELECTRICO</string>
     <string name="Str_sistema_de_frenos"> 10.- SISTEMA DE FRENOS</string>

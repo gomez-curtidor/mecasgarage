@@ -210,6 +210,8 @@ public class MainActivity extends AppCompatActivity {
             sp_combustible, sp_olor, sp_ruido, sp_kmSintoma, sp_kmDia, sp_indicadorMalFuncionamiento;
 //----------------------------------------------
 
+    private String flagSw;
+
     private EditText edName, edOrden, edPhone, edMail, edPlates, edColorCar, edVIN, edKm, edEngine,
             edSubmarca, edModelo, edNoValv,  edMSintoma, edMProblema, edAge, edLocation, edNomArch;
     private Spinner spTypeCar, spMarca, spCilindrada, spTransmision, spTraccion, spDireccion,
@@ -218,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tV1;
 
     private Switch sMecanico, sLubricacion, sIgnicion, sInyeccion, sAdmision, sEscape,
-                   sEnfriamiento, sElectronico, sElectrico, sFrenos, sSuspension, sDireccion,
+                   sAC, sElectronico, sElectrico, sFrenos, sSuspension, sDireccion,
                    sDistribucion, sTransmision;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -247,7 +249,7 @@ public class MainActivity extends AppCompatActivity {
         sInyeccion = findViewById(R.id.sw_SisInyeccion);
         sAdmision = findViewById(R.id.sw_SisAdmicion);
         sEscape = findViewById(R.id.sw_SisEscape);
-        sEnfriamiento = findViewById(R.id.sw_SisAC);
+        sAC = findViewById(R.id.sw_SisAC);
         sElectronico = findViewById(R.id.sw_SisElectronico);
         sElectrico = findViewById(R.id.sw_SisElectrico);
         sFrenos = findViewById(R.id.sw_SisFrenos);
@@ -391,6 +393,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void verificacionSwitch(Switch checkSwitch){
+        if (checkSwitch.isChecked()){
+            flagSw = "X";
+        }else{
+            flagSw="";
+        }
+    }
 
 
     public void verificacionTexto(Spinner checkSpiner, TextView tvCambiarColor){
@@ -1319,7 +1328,7 @@ public class MainActivity extends AppCompatActivity {
         str_SisInv.setFontSize(12).setBold().setFontColor(new DeviceRgb(255,255,255));
         Paragraph par_SisInv = new Paragraph();
         par_SisInv.add(str_SisInv);
-        Text str_AnDatos = new Text("[6] ANÁLISIS DE DATOS EN VIVO REELEVANTES");
+        Text str_AnDatos = new Text("[6] ANÁLISIS DE DATOS EN VIVO RELEVANTES");
         str_AnDatos.setFontSize(12).setBold().setFontColor(new DeviceRgb(255,255,255));
         Paragraph par_AnDatos = new Paragraph();
         par_AnDatos.add(str_AnDatos);
@@ -1330,10 +1339,11 @@ public class MainActivity extends AppCompatActivity {
                     .setBackgroundColor(new DeviceRgb(112,48,60)));
 
         //renglon 58
+        verificacionSwitch(sMecanico);
         tabla3.addCell(new Cell().add(new Paragraph("1").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA MECÁNICO"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("Sensor de torque ")
@@ -1341,10 +1351,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("1").setFontSize(8)));
 
         //renglon 59
+        verificacionSwitch(sLubricacion);
         tabla3.addCell(new Cell().add(new Paragraph("2").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE LUBRICACIÓN"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("Amperaje de servomotor")
@@ -1352,10 +1363,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("2").setFontSize(8)));
 
         //renglon 60
+        verificacionSwitch(sIgnicion);
         tabla3.addCell(new Cell().add(new Paragraph("3").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE IGNICIÓN"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("Temperatura de dirección electro asistida")
@@ -1363,10 +1375,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("3").setFontSize(8)));
 
         //renglon 61
+        verificacionSwitch(sInyeccion);
         tabla3.addCell(new Cell().add(new Paragraph("4").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE INYECCIÓN"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("Voltaje de alimentación 1 ")
@@ -1374,10 +1387,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("4").setFontSize(8)));
 
         //renglon 62
+        verificacionSwitch(sAdmision);
         tabla3.addCell(new Cell().add(new Paragraph("").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE ADMISIÓN"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("Voltaje de alimentación 2")
@@ -1385,10 +1399,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("5").setFontSize(8)));
 
         //renglon 63
+        verificacionSwitch(sEscape);
         tabla3.addCell(new Cell().add(new Paragraph("6").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE ESCAPE"))
                 .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph(" ")
@@ -1396,10 +1411,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("6").setFontSize(8)));
 
         //renglon 64
+        verificacionSwitch(sAC);
         tabla3.addCell(new Cell().add(new Paragraph("7").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE ENFRIAMIENTO"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("")
@@ -1407,6 +1423,7 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("7").setFontSize(8)));
 
         //renglon 65
+//        verificacionSwitch(sEnfriamiento);
         tabla3.addCell(new Cell().add(new Paragraph("8").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE AIRE ACONDICIONADO"))
                     .setFontSize(8));
@@ -1418,10 +1435,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("8").setFontSize(8)));
 
         //renglon 66
+        verificacionSwitch(sElectrico);
         tabla3.addCell(new Cell().add(new Paragraph("9").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA ELECTRICO"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("")
@@ -1429,10 +1447,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("9").setFontSize(8)));
 
         //renglon 67
+        verificacionSwitch(sElectronico);
         tabla3.addCell(new Cell().add(new Paragraph("10").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA ELECTRONICO"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("")
@@ -1440,10 +1459,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("10").setFontSize(8)));
 
         //renglon 68
+        verificacionSwitch(sFrenos);
         tabla3.addCell(new Cell().add(new Paragraph("11").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE FRENOS"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("")
@@ -1451,10 +1471,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("11").setFontSize(8)));
 
         //renglon 69
+        verificacionSwitch(sSuspension);
         tabla3.addCell(new Cell().add(new Paragraph("12").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE SUSPENCIÓN"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("")
@@ -1462,10 +1483,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("12").setFontSize(8)));
 
         //renglon 70
+        verificacionSwitch(sDireccion);
         tabla3.addCell(new Cell().add(new Paragraph("13").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE DIRECCIÓN"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("")
@@ -1473,10 +1495,11 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("13").setFontSize(8)));
 
         //renglon 71
+        verificacionSwitch(sTransmision);
         tabla3.addCell(new Cell().add(new Paragraph("14").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE TRANSMISION"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph(flagSw).setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("")
@@ -1487,7 +1510,7 @@ public class MainActivity extends AppCompatActivity {
         tabla3.addCell(new Cell().add(new Paragraph("15").setFontSize(8)));
         tabla3.addCell(new Cell(1,3).add(new Paragraph("SISTEMA DE ARRANQUE"))
                     .setFontSize(8));
-        tabla3.addCell(new Cell().add(new Paragraph(""))); //input
+        tabla3.addCell(new Cell().add(new Paragraph("").setFontSize(8))); //input
         tabla3.addCell(new Cell().add(new Paragraph("")));
         tabla3.addCell(new Cell().add(new Paragraph("")));// input
         tabla3.addCell(new Cell(1,3).add(new Paragraph("")
