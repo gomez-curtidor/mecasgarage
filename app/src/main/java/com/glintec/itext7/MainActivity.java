@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -216,6 +217,9 @@ public class MainActivity extends AppCompatActivity {
     private Button btnAcept;
     private TextView tV1;
 
+    private Switch sMecanico, sLubricacion, sIgnicion, sInyeccion, sAdmision, sEscape,
+                   sEnfriamiento, sElectronico, sElectrico, sFrenos, sSuspension, sDireccion,
+                   sDistribucion, sTransmision;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -236,6 +240,21 @@ public class MainActivity extends AppCompatActivity {
         edNoValv = findViewById(R.id.EdT_NoValv);  //# Valvulas
         edMSintoma = findViewById(R.id.edTM_Sintoma);  //Descripcion Sintoma
         edMProblema = findViewById(R.id.edTM_VerProblema); //Verificar  Problema
+
+        sMecanico = findViewById(R.id.sw_SisMecanico);
+        sLubricacion = findViewById(R.id.sw_SisLubricacion);
+        sIgnicion = findViewById(R.id.sw_SisIgnicion);
+        sInyeccion = findViewById(R.id.sw_SisInyeccion);
+        sAdmision = findViewById(R.id.sw_SisAdmicion);
+        sEscape = findViewById(R.id.sw_SisEscape);
+        sEnfriamiento = findViewById(R.id.sw_SisAC);
+        sElectronico = findViewById(R.id.sw_SisElectronico);
+        sElectrico = findViewById(R.id.sw_SisElectrico);
+        sFrenos = findViewById(R.id.sw_SisFrenos);
+        sSuspension = findViewById(R.id.sw_SisSuspencion);
+        sDireccion = findViewById(R.id.sw_SisDireccion);
+        sDistribucion = findViewById(R.id.sw_SisDistribucion);
+        sTransmision = findViewById(R.id.sw_SisTransmicion);
 
         tV1=findViewById(R.id.textView1);
 
